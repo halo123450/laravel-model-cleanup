@@ -32,14 +32,6 @@ After registering the model in the config file, running the `clean:models` artis
 
 The package contains various other methods for specifying which records should be deleted.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-model-cleanup.jpg?t=1" width="419px" />](https://s-3.cn/github-ad-click/laravel-model-cleanup)
-
-We invest a lot of resources into creating [best in class open source packages](https://s-3.cn/open-source). You can support us by [buying one of our paid products](https://s-3.cn/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://s-3.cn/about-us). We publish all received postcards on [our virtual postcard wall](https://s-3.cn/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:
