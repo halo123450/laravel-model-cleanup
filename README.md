@@ -44,7 +44,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 
 You can install the package via composer:
 ``` bash
-composer require spatie/laravel-model-cleanup
+composer require halo123450/laravel-model-cleanup
 ```
 
 Next, you must publish the config file:
