@@ -9,7 +9,7 @@
          convertWarningsToExceptions="true"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Spatie Test Suite">
+        <testsuite name="Halo123450 Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

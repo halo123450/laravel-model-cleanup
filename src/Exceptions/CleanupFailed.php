@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ModelCleanup\Exceptions;
+namespace Halo123450\ModelCleanup\Exceptions;
 
 use Exception;
 

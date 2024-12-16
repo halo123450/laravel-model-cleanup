@@ -3,7 +3,7 @@
 return [
 
     /*
-     * All models in this array that implement `Spatie\ModelCleanup\GetsCleanedUp`
+     * All models in this array that implement `Halo123450\ModelCleanup\GetsCleanedUp`
      * will be cleaned.
      */
     'models' => [

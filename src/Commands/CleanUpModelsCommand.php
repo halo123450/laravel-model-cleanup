@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\ModelCleanup\Commands;
+namespace Halo123450\ModelCleanup\Commands;
 
 use Closure;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
-use Spatie\ModelCleanup\CleanupConfig;
-use Spatie\ModelCleanup\Events\ModelCleanedUpEvent;
-use Spatie\ModelCleanup\Exceptions\CleanupFailed;
-use Spatie\ModelCleanup\Exceptions\InvalidCleanupConfig;
-use Spatie\ModelCleanup\GetsCleanedUp;
+use Halo123450\ModelCleanup\CleanupConfig;
+use Halo123450\ModelCleanup\Events\ModelCleanedUpEvent;
+use Halo123450\ModelCleanup\Exceptions\CleanupFailed;
+use Halo123450\ModelCleanup\Exceptions\InvalidCleanupConfig;
+use Halo123450\ModelCleanup\GetsCleanedUp;
 
 class CleanUpModelsCommand extends Command
 {

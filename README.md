@@ -2,10 +2,10 @@
 
 # Clean up unneeded records
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-model-cleanup.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-model-cleanup)
-![Tests](https://github.com/spatie/laravel-model-cleanup/workflows/run-tests/badge.svg)
-![Psalm](https://github.com/spatie/laravel-model-cleanup/workflows/Psalm/badge.svg)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-model-cleanup.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-model-cleanup)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/halo123450/laravel-model-cleanup.svg?style=flat-square)](https://packagist.org/packages/halo123450/laravel-model-cleanup)
+![Tests](https://github.com/halo123450/laravel-model-cleanup/workflows/run-tests/badge.svg)
+![Psalm](https://github.com/halo123450/laravel-model-cleanup/workflows/Psalm/badge.svg)
+[![Total Downloads](https://img.shields.io/packagist/dt/halo123450/laravel-model-cleanup.svg?style=flat-square)](https://packagist.org/packages/halo123450/laravel-model-cleanup)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 This package will clean up old records. 
@@ -14,8 +14,8 @@ The models you wish to clean up should have a method `cleanUp` which returns the
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\ModelCleanup\CleanupConfig;
-use Spatie\ModelCleanup\GetsCleanedUp;
+use Halo123450\ModelCleanup\CleanupConfig;
+use Halo123450\ModelCleanup\GetsCleanedUp;
 
 class YourModel extends Model implements GetsCleanedUp
 {
@@ -34,11 +34,11 @@ The package contains various other methods for specifying which records should b
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-model-cleanup.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-model-cleanup)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-model-cleanup.jpg?t=1" width="419px" />](https://s-3.cn/github-ad-click/laravel-model-cleanup)
 
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+We invest a lot of resources into creating [best in class open source packages](https://s-3.cn/open-source). You can support us by [buying one of our paid products](https://s-3.cn/open-source/support-us).
 
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://s-3.cn/about-us). We publish all received postcards on [our virtual postcard wall](https://s-3.cn/open-source/postcards).
 
 ## Installation
 
@@ -50,7 +50,7 @@ composer require halo123450/laravel-model-cleanup
 Next, you must publish the config file:
 
 ```bash
-php artisan vendor:publish --provider="Spatie\ModelCleanup\ModelCleanupServiceProvider"
+php artisan vendor:publish --provider="Halo123450\ModelCleanup\ModelCleanupServiceProvider"
 ```
 
 This is the content of the published config file `model-cleanup.php`.
@@ -59,7 +59,7 @@ This is the content of the published config file `model-cleanup.php`.
 return [
 
     /*
-     * All models in this array that implement `Spatie\ModelCleanup\GetsCleanedUp`
+     * All models in this array that implement `Halo123450\ModelCleanup\GetsCleanedUp`
      * will be cleaned.
      */
     'models' => [
@@ -69,14 +69,14 @@ return [
 
 ```
 
-Optionally, you can schedule the `Spatie\ModelCleanup\Commands\CleanUpModelsCommand` to run at a frequency of which you want to clean up models. Here's an example where all models will be cleaned up every day at midnight.
+Optionally, you can schedule the `Halo123450\ModelCleanup\Commands\CleanUpModelsCommand` to run at a frequency of which you want to clean up models. Here's an example where all models will be cleaned up every day at midnight.
 
 ```php
 // in app/Console/Kernel.php
 
 protected function schedule(Schedule $schedule)
 {
-    $schedule->command(\Spatie\ModelCleanup\Commands\CleanUpModelsCommand::class)->daily();
+    $schedule->command(\Halo123450\ModelCleanup\Commands\CleanUpModelsCommand::class)->daily();
 }
 ```
 
@@ -89,8 +89,8 @@ All models that you want to clean up must implement the `GetsCleanedUp`-interfac
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\ModelCleanup\CleanupConfig;
-use Spatie\ModelCleanup\GetsCleanedUp;
+use Halo123450\ModelCleanup\CleanupConfig;
+use Halo123450\ModelCleanup\GetsCleanedUp;
 
 class YourModel extends Model implements GetsCleanedUp
 {
@@ -214,7 +214,7 @@ In the example below, the deletion process will continue until all records older
 
 ## Events
 
-After the model has been cleaned `Spatie\ModelCleanup\Events\ModelCleanedUp` will be fired even if there were no records deleted.
+After the model has been cleaned `Halo123450\ModelCleanup\Events\ModelCleanedUp` will be fired even if there were no records deleted.
 
 It has two public properties: `model`, which contains an instance of the model which was cleaned up. and `numberOfDeletedRecords`.
 
@@ -234,15 +234,15 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email freek@s-3.cn instead of using the issue tracker.
 
 ## Postcardware
 
 You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
 
-Our address is: Spatie, Kruikstraat 22, 2018 Antwerp, Belgium.
+Our address is: Halo123450, Kruikstraat 22, 2018 Antwerp, Belgium.
 
-We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
+We publish all received postcards [on our company website](https://s-3.cn/en/opensource/postcards).
 
 ## Credits
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\ModelCleanup\Events;
+namespace Halo123450\ModelCleanup\Events;
 
-use Spatie\ModelCleanup\GetsCleanedUp;
+use Halo123450\ModelCleanup\GetsCleanedUp;
 
 class ModelCleanedUpEvent
 {

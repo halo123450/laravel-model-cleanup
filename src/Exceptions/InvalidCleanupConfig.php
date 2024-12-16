@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\ModelCleanup\Exceptions;
+namespace Halo123450\ModelCleanup\Exceptions;
 
 use Exception;
-use Spatie\ModelCleanup\GetsCleanedUp;
+use Halo123450\ModelCleanup\GetsCleanedUp;
 
 class InvalidCleanupConfig extends Exception
 {

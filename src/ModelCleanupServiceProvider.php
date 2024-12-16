@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\ModelCleanup;
+namespace Halo123450\ModelCleanup;
 
 use Illuminate\Support\ServiceProvider;
-use Spatie\ModelCleanup\Commands\CleanUpModelsCommand;
+use Halo123450\ModelCleanup\Commands\CleanUpModelsCommand;
 
 class ModelCleanupServiceProvider extends ServiceProvider
 {

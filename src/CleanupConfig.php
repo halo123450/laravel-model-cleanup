@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\ModelCleanup;
+namespace Halo123450\ModelCleanup;
 
 use Carbon\CarbonInterface;
 use Closure;

@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-model-cleanup",
+    "name": "halo123450/laravel-model-cleanup",
     "description": "This package deletes unneeded records in a database.",
     "keywords": [
         "halo123450",
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\ModelCleanup\\": "src"
+            "Halo123450\\ModelCleanup\\": "src"
         }
     },
     "autoload-dev": {
@@ -37,7 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\ModelCleanup\\ModelCleanupServiceProvider"
+                "Halo123450\\ModelCleanup\\ModelCleanupServiceProvider"
             ]
         }
     },
